@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quit_use"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="用户指南"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <LinearLayout
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/use_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:text="@string/use_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:text="@string/use_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:text="@string/use_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:text="@string/use_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:text="@string/use_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_use"
+        android:padding="10dp"
+        android:src="@drawable/pic_yhzn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

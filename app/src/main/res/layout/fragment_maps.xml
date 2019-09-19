@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:id="@+id/linerlayout_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.baidu.mapapi.map.TextureMapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:id="@+id/image_refush"
+                android:layout_weight="1"
+                android:src="@drawable/icon_index_shuaxin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_location"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_index_dingwei"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_type"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/icon_index_putongshitu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_traffic"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/icon_index_kaiqishishilukuang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--<ImageView-->
+                <!--android:id="@+id/image_traffic"-->
+                <!--android:padding="8dp"-->
+                <!--android:src="@drawable/ic_launcher"-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="36dp" />-->
+            <!--<LinearLayout-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<TextView-->
+                    <!--android:id="@+id/text_nomalmaps"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="地图"-->
+                    <!--android:background="#eee"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="16dp" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/text_satellite"-->
+                    <!--android:textColor="#eee"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="混合"-->
+                    <!--android:background="#000"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="16dp" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:paddingBottom="100dp"
+            android:layout_height="180dp">
+            <ImageView
+                android:id="@+id/image_large"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/icon_index_fangda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_small"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/icon_index_suoxiao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayoutmaps"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="6dp"
+            android:paddingBottom="20dp"
+            android:layout_width="40dp"
+            android:layout_height="100dp">
+
+
+            <ImageView
+                android:id="@+id/image_up"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/icon_index_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:clickable="false"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/image_down"
+                android:layout_weight="1"
+                android:src="@drawable/icon_index_down"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

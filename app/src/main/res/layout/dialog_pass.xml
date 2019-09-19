@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg_dialog_layout"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:text="请输入当前设备的密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/dialog_edit_pass"
+                android:password="true"
+                android:layout_margin="10dp"
+                android:textColor="#333"
+                android:background="#eee"
+                android:paddingLeft="6dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_type_selector"
+            android:text="取消"
+            android:id="@+id/button_pass_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_type_selector"
+            android:id="@+id/button_pass_sure"
+            android:text="确定"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="22dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:background="@drawable/chache_window"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:text="车牌号"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:id="@+id/text_tracecarname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/text_tracecarname"
+            android:layout_marginTop="2dp"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:text="iemi"
+            android:id="@+id/text_tracecarimei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/image_electr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/icon_chache_xh1"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/image_gsmtr"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/image_spr"
+            android:src="@drawable/icon_chache_speed"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="0km/h"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_spr"
+            android:layout_toRightOf="@+id/image_spr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="right"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_vr"
+            android:layout_toRightOf="@+id/text_spr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/image_ltt"
+            android:src="@drawable/icon_cllb_time"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="静止6小时4分46秒"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_traceltime"
+            android:layout_toRightOf="@+id/image_ltt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_centerVertical="true"
+            android:id="@+id/image_ntt"
+            android:src="@drawable/icon_cllb_riqi"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="当前时间"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_tracentimes"
+            android:layout_toRightOf="@+id/image_ntt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/image_nlt"
+            android:src="@drawable/icon_cllb_weizhi"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:singleLine="false"
+            android:ellipsize="end"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="当前位置"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_tracenlocas"
+            android:layout_toRightOf="@+id/image_nlt"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_tracestate"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textColor="#ff9913"
+            android:textSize="12sp"
+            android:text="ACC: 熄火"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_tracegps"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textColor="#ff9913"
+            android:textSize="12sp"
+            android:text="定位: GPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_tracefar"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="#ff9913"
+            android:textSize="12sp"
+            android:text="距离: 100米"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

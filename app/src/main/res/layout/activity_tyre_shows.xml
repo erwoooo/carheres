@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_tyre_quit"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/image_tyre_quit"
+            android:layout_centerHorizontal="true"
+            android:text="胎压显示"
+            android:id="@+id/text_title"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:src="@drawable/icon_taiya_download"
+            android:id="@+id/image_tyre_download"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/relative_bk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <!--上方-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image_tire1"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_taiya_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/text_pres1"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="0Bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="0℃"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text_temps1" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:background="@color/viewfinder_laser"
+                            android:id="@+id/text_warns1"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image_tire2"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_taiya_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/text_pres2"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="0Bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/text_temps2"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="0℃"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:background="@color/viewfinder_laser"
+                            android:id="@+id/text_warns2"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="漏气"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--上方-->
+
+            <!--下方-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/image_tire3"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_taiya_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                       android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true">
+                        <TextView
+                            android:id="@+id/text_pres3"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="0Bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/text_temps3"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="0℃"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:background="@color/viewfinder_laser"
+                            android:id="@+id/text_warns3"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="漏气"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image_tire4"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_taiya_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true">
+                        <TextView
+                            android:id="@+id/text_pres4"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:text="0Bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/text_temps4"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:text="0℃"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:visibility="gone"
+                            android:background="@color/viewfinder_laser"
+                            android:id="@+id/text_warns4"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:text="漏气"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--下方-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/image_centercar"
+            android:src="@drawable/bg_taiya_yellowcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>

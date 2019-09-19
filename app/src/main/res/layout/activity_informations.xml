@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linerlayout_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+    <View
+        android:background="#333"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/linerlayout_msg"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_message"
+                android:layout_width="20dp"
+                android:src="@drawable/icon_index_chache_selected"
+                android:layout_height="20dp" />
+            <TextView
+                android:textSize="14sp"
+                android:id="@+id/text_message"
+                android:text="信息"
+                android:textColor="#ff7f00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayout_trace"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_trace"
+                android:src="@drawable/icon_chache_zhuizong"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/text_trace"
+                android:text="追踪"
+                android:textSize="14sp"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayout_history"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_history"
+                android:src="@drawable/icon_chache_huifang"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/text_history"
+                android:text="历史回放"
+                android:textSize="14sp"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerlayout_set"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_setinfo"
+                android:src="@drawable/icon_chache_shezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_setinfo"
+                android:text="设置"
+                android:textColor="#999"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

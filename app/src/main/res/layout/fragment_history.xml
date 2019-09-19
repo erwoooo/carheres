@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="历史回放"
+            android:id="@+id/text_history_titles"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quit_history"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/bg_selector"
+        android:id="@+id/relative_today"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <TextView
+            android:textColor="#666"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="当天轨迹"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/image_sign"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_baojingxiaoxi_selected"
+            android:layout_alignParentEnd="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+
+    <RelativeLayout
+        android:background="@drawable/bg_selector"
+        android:id="@+id/relative_three"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#666"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="三天轨迹"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/image_signthree"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_baojingxiaoxi_selected"
+            android:layout_alignParentEnd="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <RelativeLayout
+        android:background="@drawable/bg_selector"
+        android:id="@+id/relative_auto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#666"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="自定义"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/image_signauto"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_baojingxiaoxi_selected"
+            android:layout_alignParentEnd="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/linerlayout_data"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <RelativeLayout
+
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <View
+                android:background="#666"
+                android:layout_width="1px"
+                android:layout_height="match_parent"></View>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/image_start"
+                android:src="@drawable/icon_lishihuifang_date"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:paddingLeft="6dp"
+                android:background="#eee"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image_start"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/text_start"
+                android:hint="起始日期"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_alignParentEnd="true"
+                android:background="#666"
+                android:layout_width="1px"
+                android:layout_height="match_parent"></View>
+        </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+        <RelativeLayout
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <View
+                android:background="#666"
+                android:layout_width="1px"
+                android:layout_height="match_parent"></View>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/image_stop"
+                android:src="@drawable/icon_lishihuifang_date"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:paddingLeft="6dp"
+                android:background="#eee"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image_stop"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/text_stop"
+                android:hint="截止日期"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_alignParentEnd="true"
+                android:background="#666"
+                android:layout_width="1px"
+                android:layout_height="match_parent"></View>
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_hisensure"
+        android:background="@drawable/btnensure_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

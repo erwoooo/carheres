@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relative_equip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="BT-01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/image_capacity_begin"
+            android:layout_marginRight="20dp"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_cllb_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</LinearLayout>

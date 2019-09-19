@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quitservice"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="服务商信息"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/about_logo"
+            android:layout_width="170dp"
+            android:layout_height="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+            <TextView
+                android:id="@+id/text_sername"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:text="服务商名称:"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/text_servicewname"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/text_sername"
+
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text_sername" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+            <TextView
+                android:id="@+id/text_contto"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:text="联系人:"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/text_conpeople"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_contto"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+            <TextView
+                android:id="@+id/text_tells"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:text="电话:"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/text_tellnumber"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_tells"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+            <ImageView
+                android:id="@+id/image_callnumber"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/icon_shebei_call"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+            <TextView
+                android:id="@+id/text_detel"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:text="地址:"
+                android:textColor="#333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/text_servicelocation"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_detel"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+    </LinearLayout>
+</LinearLayout>

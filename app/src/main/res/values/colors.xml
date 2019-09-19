@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bgpres">#dddddd</color>
+    <color name="bgunpres">#ffffff</color>
+
+
+    <color name="bg_bar">#FF9913</color>
+    <color name="bg_press">#FF7F00</color>
+
+    <color name="transparent">#00000000</color><!-- 透明 -->
+
+
+    <color name="igray">#ffF2F2F2</color><!-- 用于页面背景 -->
+
+    <color name="white">#ffffffff</color><!-- 白色 -->
+
+
+    <color name="seekbarsback">#FFFFFF</color>
+</resources>

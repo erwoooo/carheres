@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quitrooa"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="离线指令"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+
+    <LinearLayout
+    
+        android:id="@+id/linerlayout_rool"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_rooa1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="实时"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/image_rooa1"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_rooa2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="定时时间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_rooa2"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_rooa3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="间隔时间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_rooa3"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linner_order_rooa"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relative_select"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_editgw"
+                    android:id="@+id/edit_interval_rooa"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:textSize="16sp"
+                android:id="@+id/text_forma_rooa"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/edit_interval"
+                android:text="/小时"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_lixian_rooa"
+            android:background="@drawable/btnensure_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

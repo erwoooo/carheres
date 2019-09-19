@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="温馨提示"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="密码过于简单，建议重新修改密码!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:background="@drawable/text_shape_qd"
+        android:id="@+id/text_qd"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="确定修改密码"
+        android:layout_width="120dp"
+        android:layout_height="36dp" />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/text_shape_qx"
+        android:id="@+id/text_qx"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="不用了，谢谢!"
+        android:layout_width="120dp"
+        android:layout_height="36dp" />
+</LinearLayout>

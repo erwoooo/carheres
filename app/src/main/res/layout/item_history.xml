@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="250dp"
+    android:background="@drawable/chache_window"
+    android:layout_height="150dp">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="停止时间:"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_ltimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="静止6小时4分46秒"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_ltimet"
+            android:layout_toRightOf="@+id/text_ltimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="停止时段:"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_ltimeperd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:singleLine="false"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="静止6小时4分46秒"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_ltimeperoid"
+            android:layout_toRightOf="@+id/text_ltimeperd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="停止地点:"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_ltimeloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:singleLine="false"
+            android:ellipsize="end"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="静止6小时4分46秒"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_locas"
+            android:layout_toRightOf="@+id/text_ltimeloc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path
+            name="camera_photos"
+            path=""/>
+        <files-path path="" name="download" />
+        <external-path
+            name="download"
+            path=""/>
+
+    </paths>
+    <external-path name="images" path="test/"/>
+    <external-path
+        name="images"
+        path="take_photo/"/>
+</resources>

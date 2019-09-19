@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_ifmwquits"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+
+            android:layout_centerHorizontal="true"
+            android:text="报警信息"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/image_setmwarn"
+            android:padding="4dp"
+            android:src="@drawable/icon_baojing_shezhi"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+    <RelativeLayout
+        android:background="#FF9900"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:padding="1dp"
+            android:background="@drawable/bg_edit"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:gravity="center"
+                android:text="未读消息"
+                android:id="@+id/warn_text_unread"
+                android:layout_weight="1"
+                android:background="@drawable/bg_plug_leftnormal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="已读消息"
+                android:id="@+id/warn_text_read"
+                android:layout_weight="1"
+                android:background="@drawable/bg_plug_rightpress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/info_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+</LinearLayout>

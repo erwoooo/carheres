@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="设置"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="指令查询"
+            android:id="@+id/text_qyerryr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quit_setr"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+        <ScrollView
+
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linner_roo1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linner_rooa_mode"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linner_gw_show"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:background="#333"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"></View>
+                        <RelativeLayout
+                            android:id="@+id/relative_lixingw"
+                            android:background="@drawable/bg_selector"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:id="@+id/image_lixiangw"
+                                android:layout_marginLeft="10dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/icon_shebei_weiyi"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp" />
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/image_lixiangw"
+                                android:layout_centerVertical="true"
+                                android:textSize="16sp"
+                                android:textColor="#333"
+                                android:text="GW005指令"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <View
+                            android:background="#666"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"></View>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linerlayout_roo_show"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:background="#eee"
+                            android:textSize="16sp"
+                            android:textColor="#333"
+                            android:paddingLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="油电指令"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+                        <View
+                            android:background="#666"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"></View>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_oilr"
+                            android:background="@drawable/bg_selector"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:id="@+id/image_oil"
+                                android:layout_marginLeft="10dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/icon_shebei_youdiankongzhi"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp" />
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/image_oil"
+                                android:layout_centerVertical="true"
+                                android:textSize="16sp"
+                                android:textColor="#333"
+                                android:text="油电控制"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                        <View
+                            android:background="#666"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"></View>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_lixinrooa"
+                            android:background="@drawable/bg_selector"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:id="@+id/image_lixianrooa"
+                                android:layout_marginLeft="10dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/icon_shebei_weiyi"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp" />
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/image_lixianrooa"
+                                android:layout_centerVertical="true"
+                                android:textSize="16sp"
+                                android:textColor="#333"
+                                android:text="离线指令"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <View
+                            android:background="#666"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linner_eight"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                        <View
+                            android:background="#333"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"></View>
+                        <RelativeLayout
+                            android:id="@+id/relative_eight_morespeed"
+                            android:background="@drawable/bg_selector"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:id="@+id/image_eight_morespeed"
+                                android:layout_marginLeft="10dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/icon_shebei_weiyi"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp" />
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/image_eight_morespeed"
+                                android:layout_centerVertical="true"
+                                android:textSize="16sp"
+                                android:textColor="#333"
+                                android:text="超速报警"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+                        <View
+                            android:background="#666"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"></View>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_eight_km"
+                        android:background="@drawable/bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:id="@+id/image_eight_km"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/icon_shebei_weiyi"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp" />
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/image_eight_km"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#333"
+                            android:text="里程设置"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <View
+                        android:background="#666"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"></View>
+                    <RelativeLayout
+                        android:id="@+id/relative_eight_reset"
+                        android:background="@drawable/bg_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:id="@+id/image_eight_reset"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/icon_shebei_weiyi"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp" />
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/image_eight_reset"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#333"
+                            android:text="重启指令"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <View
+                        android:background="#666"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"></View>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_shk"
+                    android:background="@drawable/bg_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:id="@+id/image_shk"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_shebei_weiyi"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/image_shk"
+                        android:layout_centerVertical="true"
+                        android:textSize="16sp"
+                        android:textColor="#333"
+                        android:text="震动报警"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <View
+                    android:background="#666"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+                <RelativeLayout
+                    android:id="@+id/relative_center"
+                    android:background="@drawable/bg_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:id="@+id/image_center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_shebei_weiyi"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/image_center"
+                        android:layout_centerVertical="true"
+                        android:textSize="16sp"
+                        android:textColor="#333"
+                        android:text="中心号码"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <View
+                    android:background="#666"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+
+                <RelativeLayout
+                    android:id="@+id/relative_audio"
+                    android:background="@drawable/bg_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:id="@+id/image_audio"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_shebei_shebeiluyin"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/image_audio"
+                        android:layout_centerVertical="true"
+                        android:textSize="16sp"
+                        android:textColor="#333"
+                        android:text="设备录音"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <View
+                    android:background="#666"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"></View>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+</LinearLayout>

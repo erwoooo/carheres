@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_desinequipquits"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="修改设备资料"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/text_complete"
+            android:layout_centerVertical="true"
+            android:text="完成"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#fff"
+        android:id="@+id/relative_desinequipname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/text_names"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="设备名:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="#666"
+            android:background="@null"
+            android:layout_marginLeft="6dp"
+            android:textSize="16sp"
+            android:text="A5-457370"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/text_names"
+            android:id="@+id/text_desinequipname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#fff"
+        android:id="@+id/relative_plateno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/text_plates"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="车牌号:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="#666"
+            android:background="@null"
+            android:layout_marginLeft="6dp"
+            android:textSize="16sp"
+            android:text="无"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/text_plates"
+            android:id="@+id/text_plateno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#fff"
+        android:id="@+id/relative_desinequiptell"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/text_tell"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="设备电话(SIM卡号):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center_vertical"
+            android:textColor="#666"
+            android:background="@null"
+            android:layout_marginLeft="6dp"
+            android:textSize="16sp"
+            android:text="无"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/text_tell"
+            android:id="@+id/text_desinequiptell"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#eee"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quitbind"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="绑定设备"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/bind_image"
+            android:layout_marginTop="76dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pic_pzcg"
+            android:layout_width="50dp"
+            android:layout_height="38dp" />
+
+        <TextView
+            android:gravity="center"
+            android:text="您的设备BT-01绑定成功！"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/bind_image"
+            android:id="@+id/bind_text_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_below="@+id/bind_text_success"
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/bind_text_research"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:background="@drawable/bg_textbuttpn"
+                android:textColor="#fff"
+                android:text="重新查找"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/bind_text_checkequip"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:background="@drawable/bg_textbuttpn"
+                android:textColor="#fff"
+                android:text="去看看"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

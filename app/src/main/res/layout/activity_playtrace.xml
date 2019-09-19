@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+                <ImageView
+                    android:padding="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/image_playerquits"
+                    android:src="@drawable/icon_taiya_return"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="#333"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:text="历史回放"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/player_mapview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </com.baidu.mapapi.map.MapView>
+                <RelativeLayout
+                    android:gravity="center_vertical"
+                    android:id="@+id/linerlayout_car"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#333"
+                        android:textSize="12sp"
+                        android:id="@+id/text_movenmb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_toRightOf="@+id/text_movenmb"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#333"
+                        android:textSize="12sp"
+                        android:id="@+id/text_movetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/text_movetime"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#333"
+                        android:textSize="12sp"
+                        android:id="@+id/text_movespeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_toRightOf="@+id/text_movespeed"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#333"
+                        android:textSize="12sp"
+                        android:id="@+id/text_movedistace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:layout_toRightOf="@+id/text_movedistace"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#333"
+                        android:textSize="12sp"
+                        android:id="@+id/text_movedirection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+            <LinearLayout
+                android:background="@color/seekbarsback"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="280dp">
+                <TextView
+                    android:text="减慢"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.example.maptest.mycartest.Utils.VerticalSeekBar
+                    android:id="@+id/seekbar_playspeed"
+                    android:max="10"
+                    android:progress="4"
+                    android:progressDrawable="@drawable/bg_speedbar"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/theme_bar"
+                    android:thumbOffset="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp" />
+
+                <TextView
+                    android:text="加快"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linnnnnner"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                   <RelativeLayout
+                       android:layout_weight="6"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                           <ImageView
+                               android:id="@+id/image_players"
+                               android:layout_centerInParent="true"
+                               android:src="@drawable/icon_lishihuifang_zanting"
+                               android:layout_width="30dp"
+                               android:layout_height="30dp" />
+                   </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                                <SeekBar
+                                    android:progressDrawable="@drawable/bg_bar"
+                                    android:splitTrack="false"
+                                    android:thumb="@drawable/theme_bar"
+                                    android:thumbOffset="0dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true"
+                                    android:id="@+id/play_seekBar" />
+                        </RelativeLayout>
+                        <RelativeLayout
+
+                            android:layout_weight="6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <TextView
+                                    android:clickable="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/text_bg"
+                                    android:id="@+id/text_replay"
+                                    android:gravity="center"
+                                    android:textColor="#fff"
+                                    android:text="重播"
+                                    android:layout_width="40dp"
+                                    android:layout_height="30dp" />
+                        </RelativeLayout>
+
+                </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>

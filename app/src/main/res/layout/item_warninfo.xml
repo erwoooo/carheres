@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#eee"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_texttime"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:text="03-10 16:25"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linerlayout_item"
+            android:background="#ffffff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/text_itemname"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:text="设备:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/item_speed"
+                    android:layout_toRightOf="@+id/text_itemname"
+                    android:src="@drawable/icon_chache_speed"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:id="@+id/text_speed"
+                    android:layout_toRightOf="@+id/item_speed"
+                    android:text="0km/h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/item_imag"
+                    android:layout_toRightOf="@+id/text_itemname"
+                    android:src="@drawable/icon_baojing_problem"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:id="@+id/text_iteminfo"
+                    android:layout_toRightOf="@+id/item_imag"
+                    android:text="停留时间超长"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_itemaddr"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:text="地址"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/text_itemlook"
+                    android:textSize="12sp"
+                    android:textColor="#ff9913"
+                    android:layout_alignParentBottom="true"
+                    android:text="查看详情"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/image_itemnew"
+                    android:src="@drawable/icon_baojing_weiduxiaoxi"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

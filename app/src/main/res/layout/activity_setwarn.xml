@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_swnquits"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="报警设置"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <View
+        android:layout_marginTop="14dp"
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="接收新消息通知"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/switch_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="14dp"
+        android:id="@+id/linerlayout_autoset"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:text="声音"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/switch_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:id="@+id/relative_autovoice"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_selector"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:text="使用自定义提示音"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/switch_autovoice"
+                android:src="@drawable/btn_cllb_more"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:text="震动"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/switch_shok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+    </LinearLayout>
+
+
+
+<!--
+    <View
+        android:layout_marginTop="14dp"
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>-->
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_types"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_selector"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:text="报警信息类型"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/switch_warntype"
+                android:src="@drawable/btn_cllb_more"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <View
+            android:background="#999"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:text="全天提醒"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/switch_allday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+    </LinearLayout>
+</LinearLayout>

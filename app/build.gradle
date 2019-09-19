@@ -1,0 +1,344 @@
+apply plugin: 'com.android.application'
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+//获取local.properties的内容
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+android {
+//    signingConfigs {
+//        release {
+//            keyAlias 'maps'
+//            keyPassword '123456'
+//            storeFile file('D:/AndroidStudio/MyCarTest/carhere/app/maps.jks')
+//            storePassword '123456'
+//            v2SigningEnabled false
+//        }
+//    }
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    signingConfigs {
+        config {
+            storeFile file(properties.getProperty("keystroe_storeFile"))
+            storePassword properties.getProperty("keystroe_storePassword")
+            keyAlias properties.getProperty("keystroe_keyAlias")
+            keyPassword properties.getProperty("keystroe_keyPassword")
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.maptest.mycartest"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 55
+        versionName "1.8.2"
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk { abiFilters 'armeabi' }
+//        manifestPlaceholders = [
+//                BAIDUKEY:"fgreCd0tMqXuVHpnWl11MvSDRvHLNbs1"
+//        ]
+
+    }
+    // 多渠道/多环境 的不同配置
+    productFlavors {
+        car{
+            // 每个环境包名不同
+            applicationId "com.example.maptest.mycartest"
+            // 动态添加 string.xml 字段；
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！！
+            resValue "string", "app_name", "车在这儿"
+
+            resValue "bool", "auto_updates", 'false'
+            // 动态修改 常量 字段
+            buildConfigField "String", "ENVIRONMENT", '"再按一次退出车在这儿"'
+            buildConfigField "String", "app_a", '"关于车在这儿"'
+            buildConfigField "String", "app_b", '"关于“车在这儿”"'
+            buildConfigField "String", "app_net", '"www.carhere.net"'
+            buildConfigField "String", "app_pub", '"车在这儿"'
+            buildConfigField "String", "app_tag", '"car"'
+            // 修改 AndroidManifest.xml 里渠道变量
+            manifestPlaceholders = [
+                    IFLYTEK_APPKEY:"58fad51a",
+                    XG_ACCESS_ID:"2100343094",
+                    XG_ACCESS_KEY:"A97Y1U3D6WFS",
+                    HW_APPID: "100519671",
+                    CHANNEL_VALUE: "car",
+                    icon:"@mipmap/logo_96",
+                    app_icon   : "@mipmap/logo_96",
+                    FILE_PROVIDER       : "com.example.maptest.mycartest.fileprovider",
+                    TPUSH_PROVIDER : "com.example.maptest.mycartest.TPUSH_PROVIDER",
+                    AUTH_XGPUSH: "com.example.maptest.mycartest.AUTH_XGPUSH",
+                    TENCENT:"com.example.maptest.mycartest.TENCENT.MID.V3",
+                    BAIDUKEY:"fgreCd0tMqXuVHpnWl11MvSDRvHLNbs1"
+            ]
+        }
+        keep{
+            applicationId "com.example.keephouse.mycartest"
+
+            resValue "string", "app_name", "小秘管家"
+
+            resValue "bool", "auto_updates", 'true'
+
+            buildConfigField "String", "ENVIRONMENT", '"再按一次退出小秘管家"'
+            buildConfigField "String", "app_a", '"关于小秘管家"'
+            buildConfigField "String", "app_b", '"关于“小秘管家”"'
+            buildConfigField "String", "app_net", '"www.carhere.net"'
+            buildConfigField "String", "app_pub", '"小秘管家"'
+            buildConfigField "String", "app_tag", '"keep"'
+            manifestPlaceholders = [
+                    IFLYTEK_APPKEY:"5aa23574",
+                    XG_ACCESS_ID:"2100256274",
+                    XG_ACCESS_KEY:"A155QY6EH4FY",
+                    HW_APPID: "100519671",
+                    CHANNEL_VALUE: "keep",
+                    icon:"@mipmap/logo_96",
+                    app_icon   : "@mipmap/logo_96",
+                    FILE_PROVIDER       : "com.example.keephouse.mycartest.fileprovider",
+                    TPUSH_PROVIDER : "com.example.keephouse.mycartest.TPUSH_PROVIDER",
+                    AUTH_XGPUSH: "com.example.keephouse.mycartest.AUTH_XGPUSH",
+                    TENCENT:"com.example.keephouse.mycartest.TENCENT.MID.V3",
+                    BAIDUKEY:"TNrOtrOC1TX1n5XbVn4NK52T6G3zxqIC"
+
+            ]
+
+        }
+        zx{
+            applicationId "com.example.zhongxing.mycartest"
+
+            resValue "string", "app_name", "GPS"
+
+            resValue "bool", "auto_updates", 'true'
+
+            buildConfigField "String", "ENVIRONMENT", '"再按一次退出GPS"'
+            buildConfigField "String", "app_a", '"关于GPS"'
+            buildConfigField "String", "app_b", '"关于“GPS”"'
+            buildConfigField "String", "app_net", '"www.gwgps12580.cn"'
+            buildConfigField "String", "app_pub", '"GPS"'
+            buildConfigField "String", "app_tag", '"zx"'
+            manifestPlaceholders = [
+                    IFLYTEK_APPKEY:"59bb73df",
+                    XG_ACCESS_ID:"2100267202",
+                    XG_ACCESS_KEY:"AM8H1CQ891TV",
+                    HW_APPID: "100519671",
+                    CHANNEL_VALUE: "zx",
+                    icon:"@mipmap/logo_96",
+                    app_icon   : "@mipmap/logo_96",
+                    FILE_PROVIDER       : "com.example.zhongxing.mycartest.fileprovider",
+                    TPUSH_PROVIDER : "com.example.zhongxing.mycartest.TPUSH_PROVIDER",
+                    AUTH_XGPUSH: "com.example.zhongxing.mycartest.AUTH_XGPUSH",
+                    TENCENT:"com.example.zhongxing.mycartest.TENCENT.MID.V3",
+                    BAIDUKEY:"ABHwRGYPQTl60sx3jPOhOdAWE5CbsDm7"
+
+            ]
+
+        }
+        lcaf{
+            applicationId "com.example.lcaf.mycartest"
+
+            resValue "string", "app_name", "车保安"
+
+            resValue "bool", "auto_updates", 'true'
+
+            buildConfigField "String", "ENVIRONMENT", '"再按一次退出车保安"'
+            buildConfigField "String", "app_a", '"关于车保安"'
+            buildConfigField "String", "app_b", '"关于“车保安”"'
+            buildConfigField "String", "app_net", '"www.gwgps12580.cn"'
+            buildConfigField "String", "app_pub", '"车保安"'
+            buildConfigField "String", "app_tag", '"lcaf"'
+            manifestPlaceholders = [
+                    IFLYTEK_APPKEY:"5caeed4c",
+                    XG_ACCESS_ID:"2100331667",
+                    XG_ACCESS_KEY:"AXR67C66M5XL",
+                    HW_APPID: "100519671",
+                    CHANNEL_VALUE: "lcaf",
+                    icon:"@mipmap/logo_96",
+                    app_icon   : "@mipmap/logo_96",
+                    FILE_PROVIDER       : "com.example.lcaf.mycartest.fileprovider",
+                    TPUSH_PROVIDER : "com.example.lcaf.mycartest.TPUSH_PROVIDER",
+                    AUTH_XGPUSH: "com.example.lcaf.mycartest.AUTH_XGPUSH",
+                    TENCENT:"com.example.lcaf.mycartest.TENCENT.MID.V3",
+                    BAIDUKEY:"zcZXl3Ok3SDDsYndR1bPowPTe851tqOM"
+
+            ]
+
+        }
+        qld{
+            applicationId "com.example.qld.mycartest"
+
+            resValue "string", "app_name", "千里盾"
+
+            resValue "bool", "auto_updates", 'true'
+
+            buildConfigField "String", "ENVIRONMENT", '"再按一次退出千里盾"'
+            buildConfigField "String", "app_a", '"关于千里盾"'
+            buildConfigField "String", "app_b", '"关于“千里盾”"'
+            buildConfigField "String", "app_net", '"www.qld110.com"'
+            buildConfigField "String", "app_pub", '"千里盾"'
+            buildConfigField "String", "app_tag", '"qld"'
+            manifestPlaceholders = [
+                    IFLYTEK_APPKEY:"5caeed4c",
+                    XG_ACCESS_ID:"2100332656",
+                    XG_ACCESS_KEY:"A1UD911VS2VG",
+                    HW_APPID: "100519671",
+                    CHANNEL_VALUE: "qld",
+                    icon:"@mipmap/logo_96",
+                    app_icon   : "@mipmap/logo_96",
+                    FILE_PROVIDER       : "com.example.qld.mycartest.fileprovider",
+                    TPUSH_PROVIDER : "com.example.qld.mycartest.TPUSH_PROVIDER",
+                    AUTH_XGPUSH: "com.example.qld.mycartest.AUTH_XGPUSH",
+                    TENCENT:"com.example.qld.mycartest.TENCENT.MID.V3",
+                    BAIDUKEY:"nLAR3eeYU0GYFkbrVxGdYexxKgy5Lrc2"
+
+            ]
+
+        }
+
+        lya{
+            applicationId "com.lya.maptest.lyacartest"
+
+            resValue "string", "app_name", "路易安"
+
+            resValue "bool", "auto_updates", 'true'
+
+            buildConfigField "String", "ENVIRONMENT", '"再按一次退出路易安"'
+            buildConfigField "String", "app_a", '"关于路易安"'
+            buildConfigField "String", "app_b", '"关于“路易安”"'
+            buildConfigField "String", "app_net", '"www.luyian.cc"'
+            buildConfigField "String", "app_pub", '"路易安"'
+            buildConfigField "String", "app_tag", '"lya"'
+            manifestPlaceholders = [
+                    IFLYTEK_APPKEY:"59b0ed2a",
+                    XG_ACCESS_ID:"2100266706",
+                    XG_ACCESS_KEY:"A65SW6F85PMY",
+                    HW_APPID: "100519671",
+                    CHANNEL_VALUE: "lya",
+                    icon:"@mipmap/logo_96",
+                    app_icon   : "@mipmap/logo_96",
+                    FILE_PROVIDER       : "com.lya.maptest.lyacartest.fileprovider",
+                    TPUSH_PROVIDER : "com.lya.maptest.lyacartest.TPUSH_PROVIDER",
+                    AUTH_XGPUSH: "com.lya.maptest.lyacartest.AUTH_XGPUSH",
+                    TENCENT:"com.lya.maptest.lyacartest.TENCENT.MID.V3",
+                    BAIDUKEY:"n66ie74KOyMOPTXhS6ECGFO3aru5FKNE"
+
+            ]
+
+        }
+
+    }
+//移除lint检测的error
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            // debug模式下，显示log
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+
+            //为已经存在的applicationId添加后缀
+            applicationIdSuffix
+            // 为版本名添加后缀
+            versionNameSuffix "-debug"
+            // 不开启混淆
+            minifyEnabled false
+            // 不开启ZipAlign优化
+            zipAlignEnabled false
+            // 不移除无用的resource文件
+            shrinkResources false
+            // 使用config签名
+            signingConfig signingConfigs.config
+
+        }
+        release {
+            // release模式下，不显示log
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            // 为版本名添加后缀
+            versionNameSuffix "-relase"
+            // 不开启混淆
+            minifyEnabled false
+            // 开启ZipAlign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            // 使用config签名
+            signingConfig signingConfigs.config
+            // 混淆文件位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+//            // 批量打包
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+
+                    outputFileName = "cep" + "-" + buildType.name + "-" + releaseTime() + "-v" + defaultConfig.versionName + "-" + defaultConfig.versionCode + ".apk";
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        //输出apk名称为：渠道名_版本名_时间.apk
+//                        def fileName = "${variant.productFlavors[0].name}_v${defaultConfig.versionName}_${releaseTime()}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+                }
+            }
+
+        }
+    }
+    sourceSets {
+//        car { res.srcDirs = ['src/car/res', 'src/car/res/'] }
+//        keep { res.srcDirs = ['src/keep/res', 'src/keep/res/'] }
+//        zx { res.srcDirs = ['src/zx/res', 'src/zx/res/'] }
+        main() {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+}
+repositories  {   flatDir {        dirs 'libs'    }}
+
+dependencies {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.0.+'
+    implementation 'com.android.support:recyclerview-v7:26.0.+'
+    testImplementation 'junit:junit:4.12'
+    implementation 'cn.yipianfengye.android:zxing-library:2.1'
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.0.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.zhy:okhttputils:2.0.0'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.4'
+    implementation 'com.github.k0shk0sh:PermissionHelper:1.1.0'
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/AutoUpdate_SDK.jar')
+    implementation files('libs/volley.jar')
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    //Retrofit2所需要的包
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    //ConverterFactory的String依赖包
+    implementation 'com.alibaba:fastjson:1.2.39'
+    implementation 'io.reactivex:rxjava:1.0.14'
+    implementation 'io.reactivex:rxandroid:1.0.1'
+    implementation 'com.tencent.xinge:xinge:3.2.7-Release'
+    //jg包
+    implementation 'com.tencent.jg:jg:1.1'
+    //wup包
+    implementation 'com.tencent.wup:wup:1.0.0.E-release'
+    //mid包
+    implementation 'com.tencent.mid:mid:4.0.6-release'
+    implementation 'com.tencent.xinge:xghw:3.2.7-release'
+    implementation 'com.github.bumptech.glide:glide:3.6.1'
+    //支付宝
+    implementation(name: 'alipaySdk-15.6.0-20190226104053', ext: 'aar')
+    //微信SDK接入
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation('com.thoughtworks.xstream:xstream:1.4.7') {
+        exclude group: 'xmlpull', module: 'xmlpull'
+    }
+    implementation files('libs/OcrCode.jar')
+
+}

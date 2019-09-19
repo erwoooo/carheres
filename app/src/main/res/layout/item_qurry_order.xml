@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/item_quryno"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:text="编号1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+        <LinearLayout
+
+            android:background="@drawable/bg_item"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/text_ordertype"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="指令类型:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:id="@+id/text_itemtype"
+                    android:layout_toRightOf="@+id/text_ordertype"
+                    android:text="离线指令"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/text_orderstate"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="指令状态:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:id="@+id/text_itemstate"
+                    android:layout_toRightOf="@+id/text_orderstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/text_orderreturn"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="指令返回:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:id="@+id/text_itemanser"
+                    android:layout_toRightOf="@+id/text_orderreturn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/text_orderreturnt"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="返回时间:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:id="@+id/text_itemansertime"
+                    android:layout_toRightOf="@+id/text_orderreturnt"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/text_ordersend"
+                    android:textColor="#333"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:text="发送时间:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#333"
+                    android:id="@+id/text_itemsendtime"
+                    android:layout_toRightOf="@+id/text_ordersend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

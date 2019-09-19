@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quitcrawl"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="电子围栏"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/add_crawl"
+            android:src="@drawable/icon_taiya_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+ <LinearLayout
+    android:visibility="gone"
+     android:id="@+id/linerlayout_wei"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <RelativeLayout
+         android:focusable="true"
+         android:id="@+id/relative_editcraw"
+         android:background="@drawable/bg_selector"
+         android:layout_width="match_parent"
+         android:layout_height="60dp">
+         <ImageView
+             android:id="@+id/image_elecrawl"
+             android:layout_marginLeft="10dp"
+             android:layout_centerVertical="true"
+             android:src="@drawable/btn_shebei_weilan"
+             android:layout_width="34dp"
+             android:layout_height="34dp" />
+         <LinearLayout
+             android:layout_centerVertical="true"
+             android:orientation="vertical"
+             android:layout_marginLeft="16dp"
+             android:layout_toRightOf="@+id/image_elecrawl"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <TextView
+                 android:id="@+id/text_weiname"
+                 android:layout_marginTop="2dp"
+                 android:layout_centerVertical="true"
+                 android:textSize="14sp"
+                 android:textColor="#333"
+                 android:text="围栏名称"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:id="@+id/text_weitype"
+                 android:layout_centerVertical="true"
+                 android:textSize="14sp"
+                 android:textColor="#666"
+                 android:text="围栏类型:进围栏报警"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:id="@+id/text_weitime"
+                 android:layout_marginBottom="2dp"
+                 android:layout_centerVertical="true"
+                 android:textSize="14sp"
+                 android:textColor="#666"
+                 android:text="设置时间:2017/3/21 下午4:40"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+         </LinearLayout>
+         <ImageView
+             android:visibility="gone"
+             android:focusable="false"
+             android:id="@+id/image_setcrawl"
+             android:layout_marginRight="10dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentEnd="true"
+             android:src="@drawable/icon_user_edit"
+             android:layout_width="22dp"
+             android:layout_height="22dp" />
+     </RelativeLayout>
+     <View
+         android:background="#666"
+         android:layout_width="match_parent"
+         android:layout_height="1px"></View>
+     <RelativeLayout
+         android:layout_marginTop="30dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <Button
+             android:id="@+id/button_crawl_delete"
+             android:textSize="16sp"
+             android:textColor="#fff"
+             android:text="删除"
+             android:background="@drawable/btn_auto_selector"
+             android:layout_centerHorizontal="true"
+             android:layout_width="360dp"
+             android:layout_height="44dp" />
+
+     </RelativeLayout>
+ </LinearLayout>
+</LinearLayout>

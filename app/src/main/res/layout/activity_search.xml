@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <LinearLayout
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:id="@+id/liiner_sh"
+         android:orientation="horizontal"
+         android:background="#ff9913"
+         android:gravity="center"
+         android:layout_width="match_parent"
+         android:layout_height="50dp">
+         <SearchView
+             android:layout_marginLeft="10dp"
+             android:layout_weight="3"
+             android:background="@drawable/concer_bg"
+             android:id="@+id/search_information"
+             android:layout_width="match_parent"
+             android:iconifiedByDefault="false"
+             android:layout_height="38dp">
+         </SearchView>
+         <TextView
+             android:id="@+id/text_cancels"
+             android:layout_margin="6dp"
+             android:textColor="#fff"
+             android:textSize="16sp"
+             android:gravity="center"
+             android:layout_centerVertical="true"
+             android:text="取消"
+             android:layout_alignParentEnd="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linerlayout_search_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleview_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:background="#666"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/linerlayout_search_none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/pic_wty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="账号下没有胎压设备"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

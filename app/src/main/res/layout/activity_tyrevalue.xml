@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_valuequit"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="胎压阀值"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/image_fonttdownless"
+                android:layout_weight="6"
+                android:src="@drawable/icon_taiya_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:progressDrawable="@drawable/bg_bar"
+                android:splitTrack="false"
+                android:max="12"
+                android:progress="5"
+                android:thumb="@drawable/theme_bar"
+                android:layout_weight="4"
+                android:id="@+id/seekbar_fontdownvalue"
+                android:thumbOffset="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/image_fontdowncount"
+                android:layout_weight="6"
+                android:src="@drawable/icon_taiya_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="4"
+                android:id="@+id/text_fontdown"
+                android:gravity="center_horizontal"
+                android:text="前轮低压:1.8Bar"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#333"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_tyre2"
+                android:background="@drawable/btnensure_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="#333"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="4dp"
+            android:background="#333"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/image_fontupless"
+                android:layout_weight="6"
+                android:src="@drawable/icon_taiya_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:progressDrawable="@drawable/bg_bar"
+                android:splitTrack="false"
+                android:max="24"
+                android:progress="6"
+                android:thumb="@drawable/theme_bar"
+                android:layout_weight="4"
+                android:id="@+id/seekbar_fontupvalue"
+                android:thumbOffset="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/image_fontupcount"
+                android:layout_weight="6"
+                android:src="@drawable/icon_taiya_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="4"
+                android:id="@+id/text_fontup"
+                android:gravity="center_horizontal"
+                android:text="前轮高压:3.2Bar"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="4dp"
+            android:background="#333"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginTop="4dp"
+                android:id="@+id/button_tyre1"
+                android:background="@drawable/btnensure_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="#333"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="4dp"
+            android:background="#333"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/image_laterdownless"
+                android:layout_weight="6"
+                android:src="@drawable/icon_taiya_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:progressDrawable="@drawable/bg_bar"
+                android:splitTrack="false"
+                android:max="12"
+                android:progress="6"
+                android:thumb="@drawable/theme_bar"
+                android:layout_weight="4"
+                android:id="@+id/seekbar_laterdownvalue"
+                android:thumbOffset="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/image_laterdowncount"
+                android:layout_weight="6"
+                android:src="@drawable/icon_taiya_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="4"
+                android:id="@+id/text_laterdown"
+                android:gravity="center_horizontal"
+                android:text="后轮低压:1.8Bar"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="4dp"
+            android:background="#333"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_tyre0"
+                android:background="@drawable/btnensure_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="#333"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+        </LinearLayout>
+        <View
+            android:background="#333"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/image_laterupless"
+                android:layout_weight="6"
+                android:src="@drawable/icon_taiya_subtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:progressDrawable="@drawable/bg_bar"
+                android:splitTrack="false"
+                android:max="24"
+                android:progress="6"
+                android:thumb="@drawable/theme_bar"
+                android:layout_weight="4"
+                android:id="@+id/seekbar_laterupvalue"
+                android:thumbOffset="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/image_laterupcount"
+                android:layout_weight="6"
+                android:src="@drawable/icon_taiya_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="4"
+                android:id="@+id/text_laterup"
+                android:gravity="center_horizontal"
+                android:text="后轮高压:3.2Bar"
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#333"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_valueyes"
+                android:background="@drawable/btnensure_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

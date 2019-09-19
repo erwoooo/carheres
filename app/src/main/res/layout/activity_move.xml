@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quitmove"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="位移报警"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="位移报警"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/switch_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linerlayout_move"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/image_moveless"
+                android:src="@drawable/icon_taiya_subtract"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <SeekBar
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image_moveless"
+                android:progressDrawable="@drawable/bg_bar"
+                android:splitTrack="false"
+                android:max="900"
+                android:progress="0"
+                android:thumb="@drawable/theme_bar"
+                android:id="@+id/seekbar_move"
+                android:thumbOffset="0dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/seekbar_move"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/image_movecount"
+                android:src="@drawable/icon_taiya_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/text_movedis"
+                    android:gravity="center_horizontal"
+                    android:text="范围:100米"
+                    android:textSize="16sp"
+                    android:textColor="#666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666666"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/edit_first"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:hint="报警方式"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                android:id="@+id/spinner_move"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"></Spinner>
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/button_move"
+            android:background="@drawable/btnensure_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

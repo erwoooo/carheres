@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="24dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/chache_window"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="报警类型:"
+                android:textColor="#333"
+                android:textSize="14sp"
+                android:id="@+id/text_warntypes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:text="断电报警"
+                android:textColor="#333"
+                android:textSize="14sp"
+                android:layout_toRightOf="@+id/text_warntypes1"
+                android:id="@+id/text_warntypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:text="imei"
+            android:id="@+id/text_cartemid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/text_times"
+            android:text="定位类型："
+            android:src="@drawable/icon_cllb_riqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="当前时间"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_warnloctype"
+            android:layout_toRightOf="@+id/text_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/image_ntws"
+            android:src="@drawable/icon_chache_speed"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="速度"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_warnsp"
+            android:layout_toRightOf="@+id/image_ntws"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/image_ntw"
+            android:src="@drawable/icon_cllb_riqi"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="当前时间"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_warntimes"
+            android:layout_toRightOf="@+id/image_ntw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/image_nlw"
+            android:src="@drawable/icon_cllb_weizhi"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:singleLine="false"
+            android:ellipsize="end"
+            android:textColor="#666"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            android:text="当前位置"
+            android:layout_centerVertical="true"
+            android:id="@+id/text_warnlocas"
+            android:layout_toRightOf="@+id/image_nlw"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

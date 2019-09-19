@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quitmsg"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/image_quitmsg"
+            android:layout_centerHorizontal="true"
+            android:text="信息"
+            android:id="@+id/text_infor_titles"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:padding="4dp"
+            android:src="@drawable/infor_edit_selector"
+            android:id="@+id/image_editinfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <View
+    android:background="#666"
+    android:layout_width="match_parent"
+    android:layout_height="1px">
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_eqpname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_eqpnames"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="设备名:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                android:id="@+id/text_eqpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/text_eqpnames"
+                android:layout_alignBottom="@+id/text_eqpnames"
+                android:layout_toEndOf="@+id/text_eqpnames" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_platenos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_platess"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="车牌号:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                android:text="无"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_platess"
+                android:id="@+id/text_platenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+            <TextView
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="车辆图片"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/button_yl"
+                android:src="@drawable/yulantu"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                <ImageView
+                    android:padding="10dp"
+
+                    android:layout_centerVertical="true"
+                    android:id="@+id/button_sc"
+                    android:src="@drawable/shangchuan"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_eqplocation"
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+            <TextView
+                android:id="@+id/text_location"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="当前位置:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_location"
+                android:id="@+id/text_eqplocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_modle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_mod"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="型号:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                android:text="A5"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_mod"
+                android:id="@+id/text_models"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_eqptell"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_eqptell"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="设备电话(SIM卡号):"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                android:text="无"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text_eqptell"
+                android:id="@+id/text_eqptellnub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_lives"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_lv"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="激活日期:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+
+                android:id="@+id/text_lives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/text_lv"
+                android:layout_alignBottom="@+id/text_lv"
+                android:layout_toEndOf="@+id/text_lv" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_serve"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_se"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="服务日期:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                android:text="终身"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/text_se"
+                android:id="@+id/text_serve"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:padding="6dp"
+                android:src="@drawable/btn_cllb_more"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_break"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_bk"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="车辆违章查询"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:padding="6dp"
+                android:src="@drawable/btn_cllb_more"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/image_break"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative_warninfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_warninfo"
+                android:textColor="#333"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="车辆报警信息"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:padding="6dp"
+                android:src="@drawable/btn_cllb_more"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/image_warninfo"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+    </LinearLayout>
+</LinearLayout>

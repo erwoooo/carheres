@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quit_trace"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="追踪"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+    <RelativeLayout
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:id="@+id/linerlayout_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.baidu.mapapi.map.TextureMapView
+                android:id="@+id/trace_bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:id="@+id/image_tracecar"
+                android:layout_weight="1"
+                android:src="@drawable/icon_zhuizong_daohang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_locationcar"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_index_dingwei"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_typecar"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/icon_index_putongshitu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_trafficar"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/icon_index_kaiqishishilukuang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/image_reftrace"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/icon_jiejing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_marginBottom="130dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/yijianbaojing"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/text_bj"
+
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+
+            android:layout_marginBottom="120dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/yulantu"
+            android:id="@+id/image_trace_pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="6dp"
+            android:paddingBottom="20dp"
+            android:layout_width="60dp"
+            android:layout_height="100dp">
+
+            <ImageView
+
+                android:id="@+id/image_maps"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/icon_index_fangda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+
+                android:id="@+id/image_maple"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/icon_index_suoxiao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

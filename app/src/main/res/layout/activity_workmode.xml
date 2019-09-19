@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_quitgw"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="模式设置"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="选择模式"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+            
+            <Spinner
+                android:padding="4dp"
+                android:spinnerMode="dropdown"
+                android:overlapAnchor="false"
+                android:id="@+id/spinner_gw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linner_gw_order1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:focusableInTouchMode="true"
+                android:id="@+id/gw_relative_set"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+                <EditText
+                    android:maxLength="4"
+                    android:gravity="center"
+                    android:id="@+id/gw_edit_settime"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_editgw"
+                    android:layout_width="100dp"
+                    android:numeric="integer"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/gw_edit_settime"
+                    android:text="注：时间单位为分钟，范围5-1440"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="@drawable/bg_view"
+                android:layout_width="match_parent"
+                android:layout_height="30px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/linerlayout_gw_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#666"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text="智能省电模式"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_view"
+                android:layout_width="match_parent"
+                android:layout_height="30px"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/linner_gw_sleep"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_editgw"
+                android:focusableInTouchMode="true"
+                android:id="@+id/gw_relative_sleep"
+                android:layout_width="120dp"
+                android:layout_height="44dp">
+                <TextView
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="00"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/text_sleep_hour1"
+                    android:layout_width="66dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textColor="#333"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text=":"
+                    android:layout_alignRight="@+id/text_sleep_hour1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="00"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/text_sleep_min1"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_view"
+                android:layout_width="match_parent"
+                android:layout_height="30px"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_send_gw"
+            android:background="@drawable/btnensure_selector"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    
+</LinearLayout>

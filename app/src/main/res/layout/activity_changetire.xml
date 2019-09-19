@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:padding="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_changetirequit"
+            android:src="@drawable/icon_taiya_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="换轮胎指令"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="左前右前交换"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/image_change1"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="左前左后交换"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_change2"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="左前右后交换"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_change3"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="右前左后交换"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_change4"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="右前右后交换"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_change5"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <RelativeLayout
+            android:background="@drawable/bg_selector"
+            android:id="@+id/relative6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="#666"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="左后右后交换"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_change6"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_taiya_selected"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <View
+            android:background="#666"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <LinearLayout
+            android:layout_marginTop="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_tirechange"
+                android:background="@drawable/btnensure_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
